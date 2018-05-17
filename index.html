@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+
+   <body>
+   	
+	<head>
+    
+
+	
+		<script language=javascript>
+    var rev = "fwd";
+    function titlebar(val){
+        var msg  = "kortexhook";
+        var res = " ";
+        var speed = 500;
+        var pos = val;
+        msg = "   |-"+msg+"-|";
+        var le = msg.length;
+        if(rev == "fwd"){
+            if(pos < le){
+                pos = pos+1;
+                scroll = msg.substr(0,pos);
+                document.title = scroll;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "bwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+        else {
+            if(pos > 0) {
+                pos = pos-1;
+                var ale = le-pos;
+                scrol = msg.substr(ale,le);
+                document.title = scrol;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "fwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+    }
+    titlebar(0);
+</script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/stuff.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">                 
+						<h1>KORTEXHOOK</h1>
+						<font size="5"><p>Private CS:GO Cheat</p>
+						<nav>
+							<ul>
+								<font size="6"> <a href="https://discord.gg/gGDkZqq"  target="_blank" >Discord</a> <b>|</b> <a href="https://steamcommunity.com/profiles/76561198834943391"  target="_blank" >Steam</a> <b>|</b> <a href="https://www.youtube.com/channel/UCNUCoeO9mQ6yob-eHdjv-MA" target="_blank">Youtube</a>
+ <p>
+	 <iframe src="http://free.timeanddate.com/clock/i68qg9v5/n133/fs20/fcfff/tct/pct/ftb/tt0/tw1/tb4" frameborder="0" width="242" height="49" allowTransparency="true"></iframe>
+
+									
+							</ul>
+						</nav>
+					</header>
+				
+						
+						
+				<!-- Footer -->
+					<footer id="footer">
+					</footer>
+
+			</div>
+		</div>	
+			
+			
+		 <head>
+ <style type ="text/css" >
+   .footer{ 
+       position: fixed;     
+       text-align: right;    
+       bottom: 0px; 
+       width: 100%;
+   }  
+</style>
+</head>
+<body>
+
+      <video autoplay loop id="video">
+  <source src="pvideo.mp4" type="video/mp4">
+</video>
+    
+  </div>
+   <font size="3"> <div class="footer">Travis Scott - goosebumps ft. Kendrick Lamar♫</div>
+</body>
+		
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/click.js"></script>
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+		
+	</body>
+</html>
